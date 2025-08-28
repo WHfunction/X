@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X投稿ジェネレーター</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="container">
+        <header>
+            <h1>X投稿ジェネレーター</h1>
+            <p>キーワードを入れるだけで、AIが投稿文を自動生成します。</p>
+        </header>
+
+
+        <main>
+            <div class="input-area">
+                <label for="keyword">投稿のキーワード</label>
+                <input type="text" id="keyword" placeholder="例：プログラミング学習">
+                <button id="generate-btn">投稿を生成する</button>
+            </div>
+
+
+            <div class="output-area">
+                <h2>生成された投稿</h2>
+                <div id="post-result" class="post-result-box">
+                    <p>ここに結果が表示されます...</p>
+                </div>
+                <div class="result-footer">
+                    <span id="char-counter">文字数: 0</span>
+                    <button id="copy-btn">テキストをコピー</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

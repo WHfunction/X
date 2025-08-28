@@ -1,0 +1,111 @@
+﻿/* 基本スタイル */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5; /* 少し明るい背景色 */
+    color: #1c1e21;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    padding: 24px;
+}
+
+
+header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+
+header h1 {
+    color: #1DA1F2; /* Xのブランドカラー */
+    margin: 0;
+}
+
+
+/* 入力エリア */
+.input-area {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+
+#keyword {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+
+#generate-btn {
+    background-color: #1DA1F2;
+    color: white;
+    border: none;
+    border-radius: 9999px; /* 丸いボタン */
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+
+#generate-btn:hover {
+    background-color: #0c85d0;
+}
+
+
+#generate-btn:disabled {
+    background-color: #a9a9a9;
+    cursor: not-allowed;
+}
+
+
+/* 出力エリア */
+.post-result-box {
+    background-color: #f7f9fa;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 16px;
+    min-height: 100px;
+    white-space: pre-wrap; /* 改行をそのまま表示 */
+    word-wrap: break-word;
+}
+
+
+.result-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+
+
+#char-counter {
+    font-size: 14px;
+    color: #657786;
+}
+
+
+#copy-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
